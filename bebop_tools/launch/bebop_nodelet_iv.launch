@@ -2,6 +2,7 @@
 <launch>
     <!-- include the nodelet launch file from bebop_driver -->
     <arg name="namespace" default="bebop" />
+    <!-- <param name="tf_prefix" value="hej" /> -->
     <include file="$(find bebop_driver)/launch/bebop_nodelet.launch">
       <arg name="namespace" value="$(arg namespace)" />
     </include>
